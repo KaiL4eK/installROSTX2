@@ -28,8 +28,8 @@ sudo c_rehash /etc/ssl/certs
 sudo rosdep init
 # To find available packages, use:
 rosdep update
-# Environment Setup - Don't add /opt/ros/kinetic/setup.bash if it's already in bashrc
-grep -q -F 'source /opt/ros/kinetic/setup.bash' ~/.bashrc || echo "source /opt/ros/kinetic/setup.bash" >> ~/.zshrc
+# Environment Setup - Don't add /opt/ros/kinetic/setup.zsh if it's already in bashrc
+grep -q -F 'source /opt/ros/kinetic/setup.zsh' ~/.bashrc || echo "source /opt/ros/kinetic/setup.zsh" >> ~/.zshrc
 source ~/.zshrc
 # Install rosinstall
 sudo apt-get install python-rosinstall -y
